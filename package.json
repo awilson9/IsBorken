@@ -1,21 +1,111 @@
 {
-  "name": "isborken",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "shady-pines-radio-mobile",
+  "main": "expo-router/entry",
+  "version": "0.1.0",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "~49.0.15",
+    "@babel/preset-env": "^7.22.10",
+    "@expo/metro-runtime": "^2.2.5",
+    "@expo/vector-icons": "^13.0.0",
+    "@gorhom/bottom-sheet": "^4",
+    "@react-native-community/cli": "^11.3.8",
+    "@react-native-google-signin/google-signin": "^10.0.1",
+    "@react-native-masked-view/masked-view": "^0.2.9",
+    "@react-navigation/bottom-tabs": "^6.5.8",
+    "@react-navigation/drawer": "^6.6.3",
+    "@react-navigation/native": "^6.0.2",
+    "@react-navigation/native-stack": "^6.9.13",
+    "@react-navigation/stack": "^6.3.17",
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^0.27.2",
+    "date-fns": "^2.30.0",
+    "expo": "49.0.16",
+    "expo-apple-authentication": "~6.1.0",
+    "expo-constants": "~14.4.2",
+    "expo-dev-client": "^2.4.6",
+    "expo-font": "~11.4.0",
+    "expo-image": "~1.3.4",
+    "expo-linking": "~5.0.2",
+    "expo-router": "2.0.0",
+    "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
+    "expo-system-ui": "~2.4.0",
+    "expo-web-browser": "~12.3.2",
+    "lodash": "^4.17.21",
+    "metro": "^0.76.7",
+    "metro-core": "^0.79.1",
     "react": "18.2.0",
-    "react-native": "0.72.6"
+    "react-dom": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-dotenv": "^3.4.9",
+    "react-native-fs": "^2.20.0",
+    "react-native-gesture-handler": "~2.12.0",
+    "react-native-reanimated": "3.3.0",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "react-native-track-player": "^3.2.0",
+    "react-native-vector-icons": "^10.0.0",
+    "react-native-web": "~0.19.6",
+    "react-native-webview": "13.2.2",
+    "react-redux": "^8.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0-0",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0-0",
+    "@babel/plugin-transform-shorthand-properties": "^7.0.0-0",
+    "@babel/plugin-transform-template-literals": "^7.0.0-0",
+    "@babel/runtime": "^7.22.10",
+    "@types/jest": "^29.5.3",
+    "@types/lodash": "^4.14.197",
+    "@types/react": "~18.2.20",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/webpack-env": "^1.18.1",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "@welldone-software/why-did-you-render": "^7.0.1",
+    "confusing-browser-globals": "^1.0.11",
+    "eas": "^0.1.0",
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-no-date-parsing": "^1.0.1",
+    "eslint-plugin-no-relative-import-paths": "^1.5.2",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "jest": "^29.2.1",
+    "jest-expo": "~49.0.0",
+    "prettier": "^3.0.2",
+    "react-test-renderer": "18.2.0",
+    "typescript": "^5.1.3"
   },
-  "private": true
+  "overrides": {
+    "react-refresh": "~0.14.0"
+  },
+  "resolutions": {
+    "react-refresh": "~0.14.0"
+  },
+  "private": true,
+  "pnpm": {
+    "overrides": {
+      "semver@>=7.0.0 <7.5.2": ">=7.5.2"
+    }
+  }
 }
